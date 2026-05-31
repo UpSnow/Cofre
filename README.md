@@ -114,7 +114,7 @@ Não há dependências externas. Nenhum Maven, Gradle ou biblioteca de terceiros
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/cofre-digital.git
+git clone https://github.com/UpSnow/Cofre.git
 cd cofre-digital
 ```
 
