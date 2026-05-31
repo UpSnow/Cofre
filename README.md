@@ -1,9 +1,8 @@
 # 🔐 Cofre Digital
 
-Aplicação cliente/servidor em Java que simula um cofre com código secreto e fundo acumulado entre os jogadores. Desenvolvida como trabalho prático da disciplina de Redes de Computadores.
+Aplicação cliente/servidor em Java que simula um cofre com código secreto e fundo acumulado entre os jogadores. Desenvolvida como trabalho prático da disciplina de Sistemas distribuídos.
 
-> **UFPB · DCX · Rio Tinto · PB — Maio/2026**
-> Prof. Lucas da Silva Cruz
+
 
 ---
 
@@ -198,19 +197,9 @@ public static final String HOST_PADRAO = "192.168.1.10"; // IP do servidor
 ```
 cofre-digital/
 ├── src/                    código-fonte Java
-├── out/                    classes compiladas (gerado pelo javac, não versionar)
 ├── compilar_tudo.bat       script de compilação Windows
-└── README.md
 ```
 
-Adicione ao `.gitignore`:
-
-```
-out/
-*.class
-```
-
----
 
 ## Conceitos de Redes aplicados
 
@@ -222,8 +211,3 @@ out/
 
 **Região crítica** — o fundo do cofre é acessado por múltiplas threads concorrentemente. O bloco `synchronized(lock)` em `JogoService` garante exclusão mútua: incremento do fundo, verificação do acerto e pagamento do prêmio acontecem atomicamente.
 
----
-
-## Licença
-
-Projeto acadêmico — uso livre para fins educacionais.
