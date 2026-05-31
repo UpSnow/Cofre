@@ -33,17 +33,17 @@ public class JogoService {
                 return new ResultadoJogada(
                         pedido.getNome(), pedido.getAposta(), sorteio,
                         true, premio,
+                        // Mensagem exata definida no enunciado
                         "Cofre aberto, " + pedido.getNome()
-                        + "! Ganhou R$ " + premio
-                        + " (sorteado: " + sorteio + ")");
+                        + "! Ganhou R$ " + premio);
             } else {
                 int fundo = cofre.getFundo();
                 return new ResultadoJogada(
                         pedido.getNome(), pedido.getAposta(), sorteio,
                         false, fundo,
+                        // Mensagem exata definida no enunciado
                         "Código errado, " + pedido.getNome()
-                        + ". Fundo: R$ " + fundo
-                        + " (sorteado: " + sorteio + ")");
+                        + ". O cofre tem R$ " + fundo + " acumulados.");
             }
         }
     }
