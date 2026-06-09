@@ -18,8 +18,8 @@ public class CofreModel {
         return fundo;
     }
 
-    public int pagarPremioEZerar() {
-        int premio = (int) (fundo * Constantes.PERCENTUAL_PREMIO);
+    public double pagarPremioEZerar() {
+        double premio =  fundo * Constantes.PERCENTUAL_PREMIO;
         fundo = 0;
         totalAcertos.incrementAndGet();
         return premio;

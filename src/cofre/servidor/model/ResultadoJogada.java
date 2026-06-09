@@ -9,11 +9,11 @@ public class ResultadoJogada {
     private final int     aposta;
     private final int     sorteio;
     private final boolean acerto;
-    private final int     premioOuFundo;
+    private final double     premioOuFundo;
     private final String  mensagem;
 
     public ResultadoJogada(String nomeJogador, int aposta, int sorteio,
-                           boolean acerto, int premioOuFundo, String mensagem) {
+                           boolean acerto, double premioOuFundo, String mensagem) {
         this.nomeJogador   = nomeJogador;
         this.aposta        = aposta;
         this.sorteio       = sorteio;
@@ -26,6 +26,6 @@ public class ResultadoJogada {
     public int     getAposta()        { return aposta;        }
     public int     getSorteio()       { return sorteio;       }
     public boolean isAcerto()         { return acerto;        }
-    public int     getPremioOuFundo() { return premioOuFundo; }
+    public double     getPremioOuFundo() { return premioOuFundo; }
     public String  getMensagem()      { return mensagem;      }
 }

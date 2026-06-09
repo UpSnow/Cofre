@@ -7,9 +7,9 @@ public class JogadaResult {
 
     private final String  mensagem;
     private final boolean acerto;
-    private final int     premioOuFundo;
+    private final double     premioOuFundo;
 
-    public JogadaResult(String mensagem, boolean acerto, int premioOuFundo) {
+    public JogadaResult(String mensagem, boolean acerto, double premioOuFundo) {
         this.mensagem      = mensagem;
         this.acerto        = acerto;
         this.premioOuFundo = premioOuFundo;
@@ -17,5 +17,5 @@ public class JogadaResult {
 
     public String  getMensagem()      { return mensagem;      }
     public boolean isAcerto()         { return acerto;        }
-    public int     getPremioOuFundo() { return premioOuFundo; }
+    public double     getPremioOuFundo() { return premioOuFundo; }
 }

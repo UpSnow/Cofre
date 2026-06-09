@@ -29,7 +29,7 @@ public class JogoService {
             boolean acerto = pedido.getAposta() == sorteio;
 
             if (acerto) {
-                int premio = cofre.pagarPremioEZerar();
+                double premio = cofre.pagarPremioEZerar();
                 return new ResultadoJogada(
                         pedido.getNome(), pedido.getAposta(), sorteio,
                         true, premio,
